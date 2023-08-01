@@ -1,19 +1,22 @@
 package BackEndSettimana05Giorno02.GestionePrenotazioni.Entities;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class Utente {
 
 	private int id;
 	private String nome;
 	private String cognome;
 	private String username;
-	private String email;
 
-	public Utente(String nome, String cognome, String username, String email) {
+	public Utente(String nome, String cognome, String username) {
 
 		this.nome = nome;
 		this.cognome = cognome;
 		this.username = username;
-		this.email = email;
 	}
 
 	@Override
